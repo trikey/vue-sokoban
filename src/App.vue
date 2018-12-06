@@ -1,28 +1,24 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+    <div id="app" class="flex-container">
+        <Game v-if="gameStarted"></Game>
+        <Menu v-else></Menu>
+    </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+  import Game from './components/Game';
+  import Menu from './components/Menu';
+  import {mapGetters} from 'vuex';
 
-export default {
-  name: 'app',
-  components: {
-    HelloWorld
+  export default {
+    computed: {
+      ...mapGetters({
+        gameStarted: 'gameStarted',
+      }),
+    },
+    components: {
+      Menu,
+      Game
+    },
   }
-}
 </script>
-
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>

@@ -1,4 +1,4 @@
-# sokoban
+# Sokoban Game
 
 ## Project setup
 ```
@@ -15,15 +15,19 @@ npm run serve
 npm run build
 ```
 
-### Run your tests
+### Adding more levels to the game
+
+You can add more levels to the game by creating js file with name like 'level{level number}.js' and putting it into the ```src/levels``` folder
+
 ```
-npm run test
+// # - wall,
+// '' - empty space
+// $ - box
+// . - place for box
+// @ - man
 ```
 
-### Lints and fixes files
-```
-npm run lint
-```
+Current levels are taken from http://www.sourcecode.se/sokoban/levels
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).

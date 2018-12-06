@@ -1,0 +1,77 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+.flex-container {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.row {
+    width: auto;
+}
+
+.flex-item {
+    background-color: #c6f3f2;
+    padding: 5px;
+    /*width: 20px;*/
+    /*height: 20px;*/
+    margin: 10px;
+    line-height: 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 2em;
+    text-align: center;
+}
+
+.flex-item a {
+    text-decoration: none;
+    color: black;
+}
+
+.flex-item p {
+    color: black;
+}
+
+.empty {
+    width: 20px;
+    height: 20px;
+    border: 1px solid green;
+    display: inline-block;
+}
+
+.wall {
+    background-color: gray;
+}
+
+.place {
+    background-color: yellow;
+}
+
+.box {
+    background-color: red;
+}
+
+.box-on-place {
+    background-color: orange;
+}
+
+.man {
+    background-color: darkblue;
+}
+
+.man-on-place {
+    background-color: darkgreen;;
+}
